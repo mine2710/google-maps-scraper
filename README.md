@@ -1,5 +1,9 @@
 # 🗺️ Google Maps Scraper
 
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Playwright](https://img.shields.io/badge/playwright-1.48+-orange.svg)](https://playwright.dev/)
+
 Scraper sederhana untuk mengambil data tempat dari Google Maps (hotel, tempat wisata, restoran, dll), termasuk:
 - ⭐ Rating & jumlah ulasan
 - 📍 Alamat, kategori, website, telepon
@@ -7,6 +11,25 @@ Scraper sederhana untuk mengambil data tempat dari Google Maps (hotel, tempat wi
 - 💬 **Review/komentar** dari pengunjung (nama, rating, teks ulasan)
 
 Hasil disimpan dalam format **CSV** dan **Excel** yang siap dianalisis.
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone repository
+git clone https://github.com/USERNAME/google-maps-scraper.git
+cd google-maps-scraper
+
+# 2. Install dependencies
+pip install -r requirements.txt
+python -m playwright install chromium
+
+# 3. Jalankan!
+python scraper.py "Hotel di Bandung" --jumlah 10 --reviews 5
+```
+
+**Output**: File `hasil_scraping.csv` dan `hasil_scraping.xlsx` siap dibuka! 📊
+
+> 💡 **Lihat contoh output lengkap** → [CONTOH_OUTPUT.md](CONTOH_OUTPUT.md)
 
 ---
 
